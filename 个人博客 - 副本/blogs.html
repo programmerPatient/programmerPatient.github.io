@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>马力的博客</title>
+    <link rel="stylesheet" href="C:\Users\力\Desktop\个人博客\css\blogs.css" type="text/css">
+</head>
+<body>
+    <div id="fiexd"><!--顶部固定导航栏-->
+        <div id="navigat" onclick="opensidebar();">
+             <div class="navigation"></div>
+             <div class="navigation"></div>
+             <div class="navigation"></div>
+        </div>
+        <div id="fiexd-content">马力的blogs</div>
+        <div id="fiexd-right"><img src="img/14fdgfag.png"></div>
+    </div>
+    <div id="sidebar"><!--侧边栏-->
+        <span id="closeSidebar">&times;</span>
+        <div id="sidebar-top">
+            <img src="C:\Users\力\Desktop\个人博客\img\tm-450x300-11.jpg">
+            <p>marry</p>
+            <p>程序员一枚</p>
+        </div>
+        <ul>
+            <li><img>首页</li>
+            <li><img>心情随笔</li>
+            <li><img>韶华追忆</li>
+            <li><img>技术分享</li>
+            <li><img>个人归档</li>
+            <li id="openenter"><img>管理员登陆</li>
+            <li><img>Blog留言</li>
+            <li><img>关于我</li>
+        </ul>
+    </div>
+    <div id="main"><!--main主体上部的轮播盒子-->
+        <div class="tanchuang" id="tanchuang-xianshi">
+            <p>关于博客</p>
+            <div class="tanchuang-bottom">LEARN MADE</div>
+        </div>
+        <div class="tanchuang">
+            <p>关于友情链接</p>
+            <div class="tanchuang-bottom">LEARN MADE</div>
+        </div>
+        <div class="tanchuang">
+            <p>关于书屋</p>
+            <div class="tanchuang-bottom">LEARN MADE</div>
+        </div>
+        <div class="tanchuang">
+            <p>关于博主</p>
+            <div class="tanchuang-bottom">LEARN MADE</div>
+        </div>
+        <div id="suoyin">
+            <div class="radius" id="radius-moren"></div>
+            <div class="radius"></div>
+            <div class="radius"></div>
+            <div class="radius"></div>
+        </div>
+    </div>
+    <!--管理员登陆界面-->
+    <div id="enter">
+        <p id="closeenter">&times;</p>
+        <div id="login-box">
+            <!--登陆框-->
+            <form>
+                <p>账号</p>
+                <input type="text" name="name">
+                <p>密码</p>
+                <input type="password" name="pasword">
+                <input id="login" type="button" value="登陆">
+            </form>
+        </div>
+    </div>
+    <!--这个地方是博客添加的位子-->
+    <div id="Administrator"><!--管理员登陆后的界面-->
+        <div class="fiexd">
+            <p>马力创作中心</p>
+            <span id="closeAdministrator">&times;</span>
+        </div>
+        <div class="text-acozuo">
+            <div class="text-acozuo-left">
+                <ul>
+                    <li>写博客</li>
+                    <li>删除博客</li>
+                    <li>快速查找博客</li>
+                </ul>
+            </div>
+            <div class="text-acozuo-right"><!--管理员写博客的地方-->
+                <form>
+                    <input id="text" type="text" name="title" placeholder="请输入文章标题"><!--博客的标题-->
+                    <textarea id="textarea" rows="10" cols="30"></textarea><!--博客的文本-->
+                    <input id="submit" type="button" value="提交">
+                </form>
+            </div>
+        </div>
+    </div>
+    <canvas></canvas>
+</body>
+<script type="text/javascript" src="C:\Users\力\Desktop\个人博客\js\canvas.js"></script>
+<script type="text/javascript" src="C:\Users\力\Desktop\个人博客\js\blogs.js"></script>
+</html>
